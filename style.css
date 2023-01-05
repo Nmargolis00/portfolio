@@ -1,3 +1,197 @@
 *{
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: auto;
+    min-height: 100vh;
+    background: #191919;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: #1a1a1a;
+}
+
+nav{
+    list-style: none;
+    display: flex;
+}
+
+nav a{
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+a:hover, .active a{
+    opacity: 1;
+}
+
+.name{
+    color: rgba(255, 255, 255, 0.897);
+    font-size: 120px;
+    text-transform: capitalize;
+    font-weight: 300;
+    bottom: 100;
+
+}
+
+.main-page{
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    position: static;
+    top: 0;
+    transition: 1s;
+    opacity: 1;
+
+}
+
+.photo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0.5em;
+  padding: 0 0 20 px 0;
+}
+
+
+
+.paragraphs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0.5em;
+    padding: 0 0 20 px 0;
+
+}
+
+.paragraphs > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 4px solid #fff;
+    padding-right: 15px;
+    font-size: 4vw;
+    line-height: 1.1;
+
+}
+
+.paragraphs > div {
+    flex: 0 0 75%;
+
+}
+
+.project {
+    display: flex;
+    border: 5px solid turquoise;
+    min-height: 200;
+    max-height: 200;
+    flex-basis: calc (48% - 1em);
+    align-items: flex-end;
+    margin: 0.5em;
+    background-size: ;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project:first-child {
+    background-color: pink;
+    min-height: 350px;
+    flex-basis: 100%;
+}
+
+h2 {
+    font: 150;
+    color: rgba(255, 255, 255, 0.897);
+    text-transform: capitalize;
+    padding: 1;
+    margin: 1;
+
+}
+
+h3 {
+  display: flex;
+  color: #fff;
+}
+
+.article-paragraph{
+    margin-top: 2%;
+    padding: 10;
+    color: #fff;
+}
+
+.external-link{
+    color: aqua;
+}
+
+.project-1 {
+    background-image: url(./images/Arches.jpg)
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+
+address a {
+    display: inline-block;
+    margin: 0 0.2rem 0.1rem;
+    padding: 5px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    header{
+        background: purple
+    }
+    
 }
