@@ -132,7 +132,6 @@ a:hover, .active a{
 }
 .work-item {
     border: 5px solid turquoise;
-    background-color: purple;
     flex-basis: calc(50% - 16px);
     min-height: 200px;
     max-height: 200px;
@@ -148,12 +147,9 @@ a:hover, .active a{
     flex-basis: 100%;
 }
 
-.work-image:hover, .active a{
-    background-color: rgb(74, 10, 158)
-}
 
-.work-image-1:hover {
-    opacity: 1;
+.work-image-1:hover, .work-image-2:hover, .work-image-3:hover, .work-image-4:hover, .work-image-5:hover {
+    opacity: 0.4;
 }
 /* I understand that adding in hyperlinks is not the best way to add in images */
 
@@ -161,6 +157,7 @@ a:hover, .active a{
     background-image: url("https://img.freepik.com/free-vector/gradient-abstract-mountain-background-design_23-2149178797.jpg");
     background-size: 100% ;
     background-repeat: no-repeat;
+    opacity: 1.0;
 }
 
 .work-image-2 {
@@ -168,6 +165,7 @@ a:hover, .active a{
     background-size: 100% ;
     background-repeat: no-repeat;
     background-position-y: bottom;
+    opacity: 1.0;
 }
 
 .work-image-3 {
@@ -175,6 +173,7 @@ a:hover, .active a{
     background-size: 100% ;
     background-repeat: no-repeat;
     background-position-y:bottom;
+    opacity: 1.0;
 }
 
 .work-image-4 {
@@ -182,6 +181,7 @@ a:hover, .active a{
     background-size: 100% ;
     background-repeat: no-repeat;
     background-position-y: bottom ;
+    opacity: 1.0;
 }
 
 .work-image-5 {
@@ -189,8 +189,9 @@ a:hover, .active a{
     background-size: 100% ;
     background-repeat: no-repeat;
     background-position-y: center;
+    opacity: 1.0;
 }
-/* Need to get background images to go opaque */
+
 
 
 
@@ -267,4 +268,6 @@ address a {
     }
     
 }
+
+
 
