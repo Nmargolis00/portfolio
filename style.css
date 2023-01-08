@@ -148,8 +148,12 @@ a:hover, .active a{
     flex-basis: 100%;
 }
 
-.work-item:hover, .active a{
+.work-image:hover, .active a{
     background-color: rgb(74, 10, 158)
+}
+
+.work-image-1:hover {
+    opacity: 1;
 }
 /* I understand that adding in hyperlinks is not the best way to add in images */
 
@@ -188,9 +192,7 @@ a:hover, .active a{
 }
 /* Need to get background images to go opaque */
 
-.work-image-1:hover {
-    opacity: 1;
-}
+
 
 h2 {
     font: 150;
@@ -207,11 +209,16 @@ h3 {
   text-transform: capitalize;
   text-decoration: none ;
   
+  
 }
 
 p {
     color: #fff;
     text-decoration: none;
+}
+
+.description {
+    padding-top: 110px;
 }
 
 .article-paragraph{
