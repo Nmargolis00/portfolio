@@ -103,14 +103,14 @@ a:hover, .active a{
 
 }
 
-.paragraphs > h2 {
+.paragraphs > h2  {
     flex: 0 0 20%;
     text-align: right;
     border-right: 4px solid #fff;
-    padding-right: 15px;
+    padding-right: 5%;
     font-size: 4vw;
     line-height: 1.1;
-
+    
 }
 
 .paragraphs > div {
@@ -118,27 +118,78 @@ a:hover, .active a{
 
 }
 
-.project {
-    display: flex;
-    border: 5px solid turquoise;
-    min-height: 200;
-    max-height: 200;
-    flex-basis: calc (48% - 1em);
-    align-items: flex-end;
-    margin: 0.5em;
-    background-size: ;
-}
 
-.project-container {
+
+/* Put headers on aside so they are in the same column */
+
+
+
+
+.work-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+.work-item {
+    border: 5px solid turquoise;
+    background-color: purple;
+    flex-basis: calc(50% - 16px);
+    min-height: 200px;
+    max-height: 200px;
+    display: flex;
+    margin: 8px;
+    padding: 10px;
+    background-size: 150%;
 
-.project:first-child {
-    background-color: pink;
-    min-height: 350px;
+}
+
+.work-item:first-child {
+    min-height: 400px;
     flex-basis: 100%;
+}
+
+.work-item:hover, .active a{
+    background-color: rgb(74, 10, 158)
+}
+/* I understand that adding in hyperlinks is not the best way to add in images */
+
+.work-image-1 {
+    background-image: url("https://img.freepik.com/free-vector/gradient-abstract-mountain-background-design_23-2149178797.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+.work-image-2 {
+    background-image: url("https://images.unsplash.com/photo-1516417156595-3ca5df62a3a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.work-image-3 {
+    background-image: url("https://t3.ftcdn.net/jpg/01/67/72/04/240_F_167720496_af8JnHFQM7QMyIIz31tgp289ukGtlXKB.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position-y:bottom;
+}
+
+.work-image-4 {
+    background-image: url("./images/Ski\ pic.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position-y: bottom ;
+}
+
+.work-image-5 {
+    background-image: url("https://thumbs.dreamstime.com/b/sea-water-ocean-wave-surfing-surface-colorful-vibrant-sunset-barrel-shape-124362369.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+/* Need to get background images to go opaque */
+
+.work-image-1:hover {
+    opacity: 1;
 }
 
 h2 {
@@ -147,12 +198,20 @@ h2 {
     text-transform: capitalize;
     padding: 1;
     margin: 1;
+    
 
 }
 
 h3 {
-  display: flex;
   color: #fff;
+  text-transform: capitalize;
+  text-decoration: none ;
+  
+}
+
+p {
+    color: #fff;
+    text-decoration: none;
 }
 
 .article-paragraph{
@@ -161,15 +220,7 @@ h3 {
     color: #fff;
 }
 
-.external-link{
-    color: aqua;
-}
 
-.project-1 {
-    background-image: url(./images/Arches.jpg)
-    min-height: 200px;
-    max-height: 200px;
-}
 
 .contact address {
     display: flex;
@@ -195,3 +246,18 @@ address a {
     }
     
 }
+
+@media screen and (max-width: 992px) {
+    main{
+        background: rgb(71, 1, 71)
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    body{
+        background: rgb(71, 1, 71)
+    }
+    
+}
+
