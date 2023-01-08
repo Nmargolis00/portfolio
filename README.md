@@ -3,14 +3,7 @@
 
 ## Description
 
-UPDATE
-
-This project helped to identify and implement semantic HTML and cleaner and more ledgile CSS.
-
-It allows for future developers to more easily read and understand the code
-
-I learned how to label semantic HTML and review and condense CSS
-
+This project helped me to build a project from scratch that I can use a source for future projects and work to help get a job. I was able to utilize skills from previous challenges to create a functional site that would look nice and utilize flexboxes for scaling
 
 
 ## Table of Contents (Optional)
