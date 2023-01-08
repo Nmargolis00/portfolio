@@ -19,9 +19,8 @@ N/A
 
 ## Installation
 
-UPDATE
 
-Copy and past this URL: https://nmargolis00.github.io/challenge-1/
+Copy and past this URL: https://nmargolis00.github.io/portfolio/
 
 ## Image
 
