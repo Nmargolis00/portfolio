@@ -5,8 +5,6 @@
 }
 
 body{
-    width: 100%;
-    max-width: 1400px;
     display: block;
     margin: auto;
     min-height: 100vh;
@@ -101,16 +99,18 @@ a:hover, .active a{
     margin: 0;
     padding: 0 0 20 px 0;
 
+
 }
 
-.paragraphs > h2  {
+.paragraphs > .titles  {
     flex: 0 0 20%;
     text-align: right;
     border-right: 4px solid #fff;
     padding-right: 5%;
     font-size: 4vw;
     line-height: 1.1;
-    
+    width: 15%;
+
 }
 
 .paragraphs > div {
@@ -118,6 +118,18 @@ a:hover, .active a{
 
 }
 
+.titles {
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 4px solid #fff;
+    padding-right: 5%;
+    font-size: 4vw;
+    line-height: 1.1;
+    width: fit-content;
+    
+
+
+}
 
 
 /* Put headers on aside so they are in the same column */
@@ -158,6 +170,8 @@ a:hover, .active a{
     background-size: 100% ;
     background-repeat: no-repeat;
     opacity: 1.0;
+    max-width: 100%;
+    height: auto;
 }
 
 .work-image-2 {
@@ -193,15 +207,27 @@ a:hover, .active a{
 }
 
 
+@media screen and (max-width: 768px) {
+    .paragraphs  {
+        flex-direction: column;
+        border: none;
+        
+    }
 
+    .titles {
+        flex-direction: column;
+        border: none;
+    }
+
+}
 
 h2 {
-    font: 150;
+    font-size: 3rem;
     color: rgba(255, 255, 255, 0.897);
     text-transform: capitalize;
     padding: 1;
     margin: 1;
-    
+
 
 }
 
@@ -209,8 +235,8 @@ h3 {
   color: #fff;
   text-transform: capitalize;
   text-decoration: none ;
-  
-  
+
+
 }
 
 p {
@@ -252,21 +278,21 @@ address a {
     header{
         background: purple
     }
-    
+
 }
 
 @media screen and (max-width: 992px) {
     main{
         background: rgb(71, 1, 71)
     }
-    
+
 }
 
 @media screen and (max-width: 992px) {
     body{
         background: rgb(71, 1, 71)
     }
-    
+
 }
 
 
