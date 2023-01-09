@@ -170,8 +170,7 @@ a:hover, .active a{
     background-size: 100% ;
     background-repeat: no-repeat;
     opacity: 1.0;
-    max-width: 100%;
-    height: auto;
+    background-position-y: 25%;
 }
 
 .work-image-2 {
